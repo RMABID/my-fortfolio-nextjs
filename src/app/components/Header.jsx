@@ -21,7 +21,11 @@ const Header = () => {
           className="bg-top bg-no-repeat b"
           style={{ backgroundImage: `url(${bg})` }}
         >
-          <Image src={assets.profile_img} alt="" className=" border w-fit" />
+          <Image
+            src={assets.profile_img}
+            alt="image"
+            className=" border w-fit"
+          />
         </div>
       </div>
     </div>
