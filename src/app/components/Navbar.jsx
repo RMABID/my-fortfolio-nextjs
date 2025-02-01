@@ -41,7 +41,11 @@ const Navbar = () => {
             alt="logo"
           />
         </a>
-        <ul className="hidden bg-white shadow-sm bg-opacity-50 md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ">
+        <ul
+          className={`${
+            isScroll ? "" : "bg-white shadow-sm bg-opacity-50"
+          } hidden  md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 `}
+        >
           <li>
             <a className="font-Ovo" href="#top">
               Home
