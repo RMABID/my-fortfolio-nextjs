@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { assets, serviceData } from "../../../assets/assets/assets";
 
+
 const Services = () => {
   return (
     <div
+     
       id="services"
       className="w-full flex flex-col  justify-center items-center px-[12%] py-10 scroll-mt-20"
     >
@@ -15,7 +17,7 @@ const Services = () => {
       </p>
       <div
         className="grid
-       grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 my-10"
+       grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 my-10"
       >
         {serviceData.map(({ icon, title, description, link }, index) => (
           <div

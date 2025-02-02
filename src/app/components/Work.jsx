@@ -13,10 +13,10 @@ const Work = () => {
         Welcome to my web development portfolio! Explore a collection of
         projects showcasing my expertise in front-end development.
       </p>
-      <div className="grid md:grid-cols-3  lg:grid-cols-4  gap-5 my-10">
+      <div className="grid md:grid-cols-2  lg:grid-cols-4  gap-5 my-10">
         {workData.map((project, index) => (
           <div
-            className="aspect-square bg-no-repeat h-60 lg:h-80 sm:h-60 bg-cover bg-center rounded-lg relative cursor-pointer group"
+            className="aspect-square bg-no-repeat h-80 bg-cover bg-center rounded-lg relative cursor-pointer group"
             key={index}
             style={{ backgroundImage: `url(${project.bgImage})` }}
           >
