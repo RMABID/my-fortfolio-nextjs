@@ -5,7 +5,7 @@ import bg from "../../../assets/assets/public/header-bg-color.png";
 
 const Header = () => {
   return (
-    <div className="w-11/12 mx-auto max-w-3xl flex flex-col gap-4 justify-center items-center h-screen">
+    <div className="w-11/12  mx-auto max-w-3xl flex flex-col gap-4 justify-center items-center h-screen">
       <div className="md:flex justify-between ">
         <div>
           <h3 className="text-lg">Hi ! I'm Abid</h3>
