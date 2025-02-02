@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex bg-contact_bg flex-col  bg-center bg-[length:90%_auto]  bg-no-repeat justify-center items-center px-[12%] py-10 scroll-mt-20"
+      className="flex bg-contact_bg dark:bg-none flex-col  bg-center bg-[length:90%_auto]  bg-no-repeat justify-center items-center px-[12%] py-10 scroll-mt-20"
     >
       <h4 className="text-center mb-2 text-lg font-Ovo">Connect with me</h4>
       <h2 className="text-center text-5xl font-Ovo">Get in touch</h2>
@@ -39,20 +39,20 @@ const Contact = () => {
         I'd love to hear from you! If you have any questions, comments or
         feedback, please use the form below.
       </p>
-      <form onSubmit={onSubmit} className="max-w-3xl mx-auto">
+      <form onSubmit={onSubmit} className="w-full md:max-w-2xl mx-auto">
         <div className="grid md:grid-cols-2 gap-6 mt-10 mb-8">
           <input
             type="text"
             placeholder="Enter your name"
             name="name"
             required
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            className="flex-1 dark:bg-darkHover/30 dark:border-white/90 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
           />
           <input
             type="email"
             placeholder="Enter your email"
             name="email"
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
+            className="flex-1 p-3 dark:bg-darkHover/30 dark:border-white/90 outline-none border-[0.5px] border-gray-400 rounded-md bg-white"
             required
           />
         </div>
@@ -61,10 +61,10 @@ const Contact = () => {
           required
           rows="6"
           placeholder="Enter your message"
-          className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
+          className="w-full p-4 dark:bg-darkHover/30 dark:border-white/90 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6"
         ></textarea>
         <button
-          className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
+          className="dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500"
           type="submit"
         >
           Submit Now{" "}

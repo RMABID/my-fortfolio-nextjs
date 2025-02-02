@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { assets, workData } from "../../../assets/assets/assets";
 
-const Work = () => {
+const Work = ({ isDark }) => {
   return (
     <div
       id="work"
@@ -13,7 +13,7 @@ const Work = () => {
         Welcome to my web development portfolio! Explore a collection of
         projects showcasing my expertise in front-end development.
       </p>
-      <div className="grid md:grid-cols-2  lg:grid-cols-4  gap-5 my-10">
+      <div className="grid md:grid-cols-2  lg:grid-cols-4  gap-5 my-10 dark:text-black">
         {workData.map((project, index) => (
           <div
             className="aspect-square bg-no-repeat h-80 bg-cover bg-center rounded-lg relative cursor-pointer group"
@@ -34,9 +34,14 @@ const Work = () => {
       </div>
       <a
         href=""
-        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full  py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 "
+        className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full  py-3 px-10 mx-auto my-20 hover:bg-lightHover dark:text-white dark:border-white dark:hover:bg-darkHover duration-500 "
       >
-        Show more <Image alt="" src={assets.right_arrow_bold} className="w-4" />
+        Show more{" "}
+        <Image
+          alt=""
+          src={isDark ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+          className="w-4"
+        />
       </a>
     </div>
   );

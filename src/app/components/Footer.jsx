@@ -3,13 +3,17 @@ import Image from "next/image";
 import { assets } from "../../../assets/assets/assets";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({ isDark }) => {
   return (
     <div className="mt-20">
       <div className="text-center">
         <h2 className="text-4xl font-bold mb-2">RM Abid</h2>
         <div className="w-max flex items-center gap-2 mx-auto">
-          <Image alt="" src={assets.mail_icon} className="w-6" />
+          <Image
+            alt=""
+            src={isDark ? assets.mail_icon_dark : assets.mail_icon}
+            className="w-6"
+          />
           mdabidaliimran@gmail.com
         </div>
       </div>

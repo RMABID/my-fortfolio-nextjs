@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { assets, infoList, toolsData } from "../../../assets/assets/assets";
 
-const About = () => {
+const About = ({ isDark }) => {
   return (
     <div
       id="about"
@@ -27,16 +27,26 @@ const About = () => {
           <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <li
-                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black"
+                className="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black dark:border-white dark:hover:shadow-white dark:hover:bg-darkHover/50"
                 key={index}
               >
-                <Image src={icon} alt={title} className="w-7 mt-3" />
-                <h3 className="my-4 font-semibold text-gray-700 ">{title}</h3>
-                <p className="text-gray-600 text-sm">{description}</p>
+                <Image
+                  src={isDark ? iconDark : icon}
+                  alt={title}
+                  className="w-7 mt-3"
+                />
+                <h3 className="my-4 font-semibold dark:text-white text-gray-700 ">
+                  {title}
+                </h3>
+                <p className="text-gray-600 dark:text-white text-sm">
+                  {description}
+                </p>
               </li>
             ))}
           </ul>
-          <h4 className="my-6 text-gray-700 font-Ovo">Tools I use</h4>
+          <h4 className="my-6 text-gray-700 font-Ovo dark:text-white">
+            Tools I use
+          </h4>
           <ul className="flex items-center gap-3 sm:gap-5">
             {toolsData.map((tool, index) => (
               <li

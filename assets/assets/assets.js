@@ -28,7 +28,7 @@ import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
 import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
+import full_stack_icon from "./Full-Stack Development.png";
 import ui_icon from "./ui-icon.png";
 import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
@@ -67,7 +67,7 @@ export const assets = {
   close_black,
   close_white,
   web_icon,
-  mobile_icon,
+  full_stack_icon,
   ui_icon,
   graphics_icon,
   right_arrow,
@@ -103,27 +103,29 @@ export const serviceData = [
   {
     icon: assets.web_icon,
     title: "Web design",
-    description: "Web development is the process of building, programming...",
+    description:
+      "Web development involves building interactive and scalable websites using modern technologies like React.js, Next.js, and Node.js.",
     link: "",
   },
   {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: assets.full_stack_icon,
+    title: "Full-Stack Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Full-stack development includes both frontend and backend solutions, integrating MongoDB, Express, React, and Node.js for seamless performance.",
     link: "",
   },
   {
     icon: assets.ui_icon,
     title: "UI/UX design",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "UI/UX design focuses on crafting intuitive and visually appealing interfaces using Tailwind CSS and modern design principles.",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: assets.firebase,
+    title: "Firebase & Next.js Solutions",
+    description:
+      "Leverage Firebase and Next.js to build fast, SEO-friendly, and real-time applications with seamless authentication and database management.",
     link: "",
   },
 ];
@@ -133,13 +135,13 @@ export const infoList = [
     icon: assets.code_icon,
     iconDark: assets.code_icon_dark,
     title: "Languages",
-    description: "HTML, CSS, JavaScript React Js, Next Js",
+    description: "HTML, CSS, JavaScript React Js, Next Js, Node js",
   },
   {
     icon: assets.edu_icon,
     iconDark: assets.edu_icon_dark,
     title: "Education",
-    description: "B.Tech in Computer Science",
+    description: "Bachelor of Arts",
   },
   {
     icon: assets.project_icon,
