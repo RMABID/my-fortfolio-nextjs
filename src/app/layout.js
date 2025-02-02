@@ -12,7 +12,7 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "Abid | Portfolio",
   description: "Visited my Portfolio",
 };
 
