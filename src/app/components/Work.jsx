@@ -1,5 +1,7 @@
+// "use client";
 import Image from "next/image";
 import { assets, workData } from "../../../assets/assets/assets";
+import Link from "next/link";
 
 const Work = ({ isDark }) => {
   return (
@@ -15,21 +17,22 @@ const Work = ({ isDark }) => {
       </p>
       <div className="grid md:grid-cols-2  lg:grid-cols-4  gap-5 my-10 dark:text-black">
         {workData.map((project, index) => (
-          <div
+          <Link
+            href={`/project/${project?.id}`}
             className="aspect-square bg-no-repeat h-80 bg-cover bg-center rounded-lg relative cursor-pointer group"
             key={index}
-            style={{ backgroundImage: `url(${project.bgImage})` }}
+            style={{ backgroundImage: `url(${project?.bgImage})` }}
           >
             <div className="bg-white w-10/12 rounded-md  bottom-5 absolute left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
               <div>
-                <h2 className="font-semibold">{project.title}</h2>
-                <p className="text-sm text-gray-700">{project.description}</p>
+                <h2 className="font-semibold">{project?.title}</h2>
+                <p className="text-sm text-gray-700">{project?.description}</p>
               </div>
               <div className="border rounded-full border-black w-9 aspect-square aspect flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-200 transition ">
-                <Image alt="" src={assets.send_icon} className="w-5" />
+                <Image alt="" src={assets?.send_icon} className="w-5" />
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
       <a

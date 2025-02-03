@@ -81,21 +81,57 @@ export const workData = [
     title: "Frontend project",
     description: "Web Design",
     bgImage: "/work-1.png",
+    id: 0,
+    link: "",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "E-commerce Website",
+    description: "Full-Stack Development",
     bgImage: "/work-2.png",
+    id: 1,
+    link: "https://rstiles.netlify.app",
+    project_details: {
+      project_name: "RS Tiles and Sanitary – E-commerce Website",
+      project_overview:
+        "RS Tiles and Sanitary is a modern e-commerce platform designed for purchasing high-quality tiles and sanitary products. The website offers a seamless shopping experience, allowing users to browse products, add them to their cart, and complete transactions effortlessly.",
+      technologies:
+        "React.js, Tailwind CSS, Firebase, Node.js, Express.js, MongoDB",
+      features: [
+        "User Authentication with Firebase",
+        "Product Listing & Filtering",
+        "Shopping Cart & Secure Checkout",
+        "Responsive UI with Tailwind CSS",
+        "Admin Dashboard for product and order management",
+        "Real-Time Database with MongoDB",
+      ],
+      challenges: [
+        {
+          challenge: "Handling real-time user authentication",
+          solution:
+            "Implemented Firebase Authentication for secure login and signup.",
+        },
+        {
+          challenge: "Optimizing UI performance for fast page loads",
+          solution:
+            "Used Tailwind CSS and lazy loading to improve speed and responsiveness.",
+        },
+      ],
+      live_site: "https://rstiles.netlify.app/",
+    },
   },
   {
     title: "Photography site",
     description: "Web Design",
     bgImage: "/work-3.png",
+    id: 2,
+    link: "",
   },
   {
     title: "UI/UX designing",
     description: "UI/UX Design",
     bgImage: "/work-4.png",
+    id: 3,
+    link: "",
   },
 ];
 
