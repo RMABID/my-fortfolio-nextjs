@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Work from "./components/Work";
+import SideNav from "./components/SideNav";
 
 export default function Home() {
   const [isDark, setIsDark] = useState(false);
@@ -37,6 +38,7 @@ export default function Home() {
   return (
     <>
       <Navbar isDark={isDark} setIsDark={setIsDark} />
+      <SideNav />
       <Header isDark={isDark} />
       <About isDark={isDark} />
       <Services isDark={isDark} />
