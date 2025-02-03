@@ -34,7 +34,7 @@ const Footer = ({ isDark }) => {
             <a
               className="flex items-center gap-1 "
               target="_blank"
-              href="https://github.com/RMABID"
+              href="https://www.linkedin.com/in/rm-abed"
             >
               <FaLinkedin /> LinkedIn
             </a>
@@ -43,7 +43,7 @@ const Footer = ({ isDark }) => {
             <a
               className="flex items-center gap-1 "
               target="_blank"
-              href="https://github.com/RMABID"
+              href="https://www.facebook.com/r.m.imran.53983"
             >
               <FaFacebook /> Facebook
             </a>
