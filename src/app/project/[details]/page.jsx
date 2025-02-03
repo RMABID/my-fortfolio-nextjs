@@ -2,6 +2,7 @@
 import React, { use, useEffect, useState } from "react";
 import { assets, workData } from "../../../../assets/assets/assets";
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 const page = ({ params }) => {
   const id = use(params);
@@ -12,6 +13,14 @@ const page = ({ params }) => {
     setProjectDetails(data);
   }, [id.details]);
 
+  if (!projectDetails) {
+    return (
+      <div className="text-center text-gray-600 mt-10">
+        <p>Loading project details...</p>
+      </div>
+    );
+  }
+
   console.log(projectDetails);
 
   return (
@@ -21,8 +30,8 @@ const page = ({ params }) => {
           href="/"
           className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full  py-3 px-10 mx-auto my-20 hover:bg-lightHover dark:text-white dark:border-white dark:hover:bg-darkHover duration-500 "
         >
-          <Image alt="" src={assets.right_arrow_bold} className="w-4" />
-          Show more
+          <Image alt="" src={assets.arrow_icon} className="w-4" />
+          Back to Home
         </a>
       </div>
       <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-xl">
@@ -69,7 +78,7 @@ const page = ({ params }) => {
           </ul>
         </div>
 
-        <div className="mt-6">
+        <div className="mt-6 flex justify-between items-center">
           <a
             href={projectDetails?.project_details?.live_site}
             target="_blank"
@@ -77,6 +86,17 @@ const page = ({ params }) => {
             className="inline-block px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-lg font-medium"
           >
             Visit Live Site 🚀
+          </a>
+          <a
+            href={projectDetails?.project_details?.github_site}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 text-white bg-blue-600 hover:bg-blue-700 rounded-lg text-md font-medium"
+          >
+            <span className="text-2xl">
+              <FaGithub />
+            </span>
+            Github Site
           </a>
         </div>
       </div>

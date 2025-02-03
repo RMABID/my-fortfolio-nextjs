@@ -117,14 +117,50 @@ export const workData = [
         },
       ],
       live_site: "https://rstiles.netlify.app/",
+      github_site: "https://github.com/RMABID/rs-tiles",
     },
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "Tech Finder",
+    description: "Full-Stack Development",
     bgImage: "/work-3.png",
     id: 2,
     link: "",
+
+    project_details: {
+      project_name: "Tech Finder",
+      project_overview:
+        "Tech Finder is a platform designed to help users discover and explore the latest technology products, including mobile apps, websites, and other tech innovations. It offers a curated list of new products, allowing users to stay updated with the latest trends in technology.",
+      technologies: "React.js, Firebase, Tailwind CSS, Node.js, MongoDB, JWT",
+      features: [
+        "User authentication with JWT and Firebase",
+        "Product submission and approval system",
+        "Upvote/downvote system for user engagement",
+        "Categorization of products for easy navigation",
+        "Search functionality to find specific products",
+        "Admin panel for product moderation",
+        "Responsive design for seamless experience across devices",
+      ],
+      challenges: [
+        {
+          challenge: "Ensuring real-time updates of new products",
+          solution:
+            "Implemented Firebase and MongoDB to manage and update the product database efficiently.",
+        },
+        {
+          challenge: "Creating an intuitive and responsive user interface",
+          solution:
+            "Utilized Tailwind CSS to design a clean and responsive UI that adapts to different screen sizes.",
+        },
+        {
+          challenge: "Securing user authentication and authorization",
+          solution:
+            "Integrated JWT for secure authentication and Firebase for identity management.",
+        },
+      ],
+      live_site: "https://product-hunter-59f35.web.app/",
+      github_site: "https://github.com/RMABID/Tech-Finder-assignment-12-client",
+    },
   },
   {
     title: "UI/UX designing",
