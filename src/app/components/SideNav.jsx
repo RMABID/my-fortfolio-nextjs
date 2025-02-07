@@ -14,14 +14,14 @@ const SideNav = () => {
           <div
             tabIndex={0}
             role="button"
-            className="text-2xl w-10 h-10 bg-black rounded-xl flex items-center justify-center cursor-pointer z-40"
+            className="text-2xl w-10 h-10 bg-black dark:bg-white dark:text-black rounded-xl flex items-center justify-center cursor-pointer z-40"
           >
             <FaLinkedinIn />
           </div>
 
           <ul
             tabIndex={0}
-            className="dropdown-content menu bg-black rounded-box z-1 w-40 ml-11 -mt-11 cursor-pointer p-2 shadow-sm"
+            className="dropdown-content menu bg-black dark:bg-white dark:text-black rounded-box z-1 w-40 ml-11 -mt-11 cursor-pointer p-2 shadow-sm"
           >
             Linkedin
           </ul>
@@ -34,14 +34,14 @@ const SideNav = () => {
           <div
             tabIndex={0}
             role="button"
-            className="text-2xl w-10 h-10 bg-black rounded-xl flex items-center justify-center cursor-pointer z-40"
+            className="text-2xl w-10 h-10 bg-black dark:bg-white dark:text-black rounded-xl flex items-center justify-center cursor-pointer z-40"
           >
             <FaGithub />
           </div>
 
           <ul
             tabIndex={0}
-            className="dropdown-content menu bg-black rounded-box z-1 w-40 ml-11 -mt-11 cursor-pointer p-2 shadow-sm"
+            className="dropdown-content menu bg-black dark:bg-white dark:text-black rounded-box z-1 w-40 ml-11 -mt-11 cursor-pointer p-2 shadow-sm"
           >
             GitHub
           </ul>
@@ -53,14 +53,14 @@ const SideNav = () => {
           <div
             tabIndex={0}
             role="button"
-            className="text-2xl w-10 h-10 bg-black rounded-xl flex items-center justify-center cursor-pointer z-40"
+            className="text-2xl w-10 h-10 bg-black dark:bg-white dark:text-black rounded-xl flex items-center justify-center cursor-pointer z-40"
           >
             <FaFacebookF />
           </div>
 
           <ul
             tabIndex={0}
-            className="dropdown-content menu bg-black rounded-box z-1 w-40 ml-11 -mt-11 cursor-pointer p-2 shadow-sm"
+            className="dropdown-content menu bg-black dark:bg-white dark:text-black rounded-box z-1 w-40 ml-11 -mt-11 cursor-pointer p-2 shadow-sm"
           >
             Facebook
           </ul>
@@ -72,14 +72,14 @@ const SideNav = () => {
           <div
             tabIndex={0}
             role="button"
-            className="text-2xl w-10 h-10 bg-black duration-500  transition-all rounded-xl flex items-center justify-center cursor-pointer z-40"
+            className="text-2xl w-10 h-10 bg-black duration-500 dark:bg-white dark:text-black transition-all rounded-xl flex items-center justify-center cursor-pointer z-40"
           >
             <FaYoutube />
           </div>
 
           <ul
             tabIndex={0}
-            className="dropdown-content menu bg-black rounded-box z-1 w-40 ml-11 -mt-11 cursor-pointer p-2 shadow-sm"
+            className="dropdown-content menu bg-black dark:bg-white dark:text-black rounded-box z-1 w-40 ml-11 -mt-11 cursor-pointer p-2 shadow-sm"
           >
             Youtube
           </ul>
